@@ -1,0 +1,194 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 8, 2023, 8:10:36 PM
+    Author     : khanh
+*/
+
+
+body {
+          height: 100vh;
+          /*overflow: hidden;*/
+          background-repeat: no-repeat;
+}
+
+.header {
+          margin-top: 20px;
+}
+
+.header a {
+          padding: 5px 15px;
+          width: fit-content;
+          font-size: 15px;
+          font-weight: bold;
+          color: white;
+          text-decoration: none;
+          font-family: sans-serif;
+}
+
+.header a:hover {
+          border-bottom: 0.5px solid white;
+          /*          transition: 0.5s ease;*/
+}
+
+.main {
+          margin: 50px 150px 0 150px;
+          height: 100vh;
+          background-color: rgba(59, 59, 59, 0.58);
+          color: white;
+          font-family: sans-serif;
+}
+
+.movie-title {
+          font-weight: bold;
+          font-size: 65px;
+}
+
+.booking-container {
+          display: flex;
+          column-gap: 2em;
+          padding: 10px;
+}
+
+.poster {
+          max-height: 400px;
+          max-width: 300px;
+}
+
+.seat {
+          background-color: white;
+          height: 24px;
+          width: 30px;
+          margin: 6px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+}
+
+.seat.selected {
+          background-color: green;
+}
+
+.seat.sold {
+          background-color: red;
+}
+
+.seat:nth-of-type(2) {
+          margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+          margin-right: 18px;
+}
+
+.seat:not(.sold):hover {
+          cursor: pointer;
+          transform: scale(1.2);
+}
+
+.seat-legend .seat:not(.sold):hover {
+          cursor: default;
+          transform: scale(1);
+}
+
+.seat-legend ul {
+          /*background: rgba(0, 0, 0, 0.1);*/
+          padding: 5px 10px;
+          border-radius: 5px;
+          color: white;
+          list-style-type: none;
+          display: flex;
+          justify-content: center;
+}
+
+.seat-legend li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 10px;
+}
+
+.seat-legend li small{
+          margin-left: 2px;
+}
+
+.screen-container {
+          flex: 1;
+          background-color: rgba(0, 0, 0, 0.6);
+          padding: 5px;
+}
+
+.seat-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          flex-wrap: wrap;
+}
+
+.row {
+          display: flex;
+          justify-content: center;
+}
+
+.screen {
+          background-color: white;
+          height: 100px;
+          width: 50%;
+          margin: 15px 0;
+          transform: rotateX(-48deg);
+          box-shadow: 0 3px 10px #7DB9B6;
+          justify-content: center;
+}
+
+.customer-info-input {
+          display: flex;
+          column-gap: 2em;
+          margin-left: 5px;
+}
+
+.input-group {
+          position: relative;
+          margin-bottom: 7px;
+}
+
+label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(10px, 10px);
+          transform-origin: left;
+          transition: transform .25s;
+}
+
+#input {
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          font: inherit;
+          color: #ced4da;
+          background-color: transparent;
+          outline: 2px solid #ced4da;
+}
+
+.input-group:focus-within label {
+          transform: translate(0, -30px) scale(0.8);
+          color: #ced4da;
+}
+
+.input-group:focus-within #input {
+          outline-color: #ced4da;
+}
+
+.button {
+          padding: 10px 30px;
+          width: fit-content;
+          background-color: #00406c;
+          font-size: 10px;
+          font-weight: bold;
+          color: #ced4da;
+          text-decoration: none;
+          cursor: pointer;
+          border: 1px hidden;
+}

@@ -1,0 +1,55 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 13, 2023, 5:24:14 PM
+    Author     : khanh
+*/
+
+.input-group {
+          position: relative;
+}
+
+label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(10px, 10px);
+          transform-origin: left;
+          transition: transform .25s;
+}
+
+#id {
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          font: inherit;
+          color: #ced4da;
+          background-color: transparent;
+          outline: 2px solid #ced4da;
+}
+
+.input-group:focus-within label {
+          transform: translate(0, -30px) scale(0.8);
+          color: #ced4da;
+}
+
+.input-group:focus-within #id {
+          outline-color: #ced4da;
+}
+
+.button {
+          padding: 10px 30px;
+          width: fit-content;
+          background-color: #00406c;
+          font-size: 10px;
+          font-weight: bold;
+          color: #ced4da;
+          text-decoration: none;
+          cursor: pointer;
+}
+
+form {
+          margin-left: 10px;
+}

@@ -1,0 +1,91 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 11, 2023, 7:32:59 PM
+    Author     : khanh
+*/
+
+body {
+          height: 100vh;
+          /*overflow: hidden;*/
+          background-repeat: repeat;
+          background-color: #001a2c;
+}
+
+.header {
+          margin-top: 20px;
+}
+
+.header a {
+          padding: 5px 15px;
+          width: fit-content;
+          font-size: 15px;
+          font-weight: bold;
+          color: #ced4da;
+          text-decoration: none;
+          font-family: sans-serif;
+}
+
+.header a:hover {
+          border-bottom: 0.5px solid #ced4da;
+          /*          transition: 0.5s ease;*/
+}
+
+.main {
+          margin: 150px 150px 0 150px;
+          height: 100vh;
+          background-color: rgba(255, 255, 255, 0.3);
+          color: #ced4da;
+          font-family: sans-serif;
+}
+
+.booking-header {
+          padding: 10px;
+          font-weight: bold;
+          font-size: 65px;
+}
+
+.booking-container {
+          display: flex;
+          column-gap: 2em;
+          padding: 10px;
+}
+
+.poster {
+          max-height: 400px;
+          max-width: 300px;
+}
+
+.info {
+          margin: 10px auto;
+          flex: 1;
+}
+
+.booking-info {
+          border-bottom: 1px solid white;
+          width: 100%;
+          margin-bottom: 2em;
+          padding-bottom: 2em;
+}
+
+table {
+          height: 250px;
+
+}
+
+.label {
+          width: 70%;
+}
+
+.button {
+          padding: 10px 30px;
+          width: fit-content;
+          background-color: #00406c;
+          font-size: 10px;
+          font-weight: bold;
+          color: #ced4da;
+          text-decoration: none;
+          cursor: pointer;
+}

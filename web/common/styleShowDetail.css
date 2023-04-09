@@ -1,0 +1,85 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 6, 2023, 9:15:36 AM
+    Author     : khanh
+*/
+
+body {
+          height: 90vh;
+          /*overflow: hidden;*/
+          background-repeat: no-repeat;
+}
+
+.header {
+          margin-top: 20px;
+}
+
+.header a {
+          padding: 5px 15px;
+          width: fit-content;
+          font-size: 15px;
+          font-weight: bold;
+          color: white;
+          text-decoration: none;
+          font-family: sans-serif;
+}
+
+.header a:hover {
+          border-bottom: 0.5px solid white;
+          /*          transition: 0.5s ease;*/
+}
+
+.main {
+          margin: 150px 150px 0 150px;
+          height: 100vh;
+          background-color: rgba(59, 59, 59, 0.58);
+          color: #ced4da;
+          font-family: sans-serif;
+}
+
+.movie-title {
+          font-weight: bold;
+          font-size: 65px;
+}
+
+.booking-container {
+          display: flex;
+          column-gap: 2em;
+          padding: 10px;
+}
+
+.poster {
+          max-height: 400px;
+          max-width: 300px;
+}
+
+.datetime-container {
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1em;
+}
+
+.button {
+          /*border: 1px solid white;*/
+          padding: 10px 30px;
+          height: 50px;
+          width: fit-content;
+          background-color: #b0b0b0;
+          font-size: 10px;
+          font-weight: bold;
+          color: black;
+          text-decoration: none;
+}
+
+span {
+          font-size: 20px;
+}
+
+/*.button:hover {
+          box-shadow: 0 0 5px rgba(253, 51, 51, 0.8);
+          color: white;
+}*/
